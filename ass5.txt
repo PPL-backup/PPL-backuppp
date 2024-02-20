@@ -1,0 +1,39 @@
+#include<stdio.h>
+int main()
+{
+	int i,n,a[10];
+	int even_no_sum=0,odd_no_sum=0;
+	
+	printf("enter the size array ");
+	scanf("%d",&n);
+	printf("enter the elements in the array ");
+	
+	for(i=0;i<n;i++)
+	{
+		scanf("%d",&a[i]);
+	}
+	for(i=0;i<n;i++)
+	{
+		if(a[i]%2==0)
+		{
+			even_no_sum=even_no_sum+a[i];
+		}
+		else
+		{
+			odd_no_sum=odd_no_sum+a[i];
+		}
+	}
+	printf("The sum of the even elements in the array is= %d\n",even_no_sum);
+	printf("The sum of the odd elements in the array is= %d\n",odd_no_sum);
+	return 0;
+}
+
+OUTPUT:
+enter the size array 5
+enter the elements in the array 7
+8
+14
+23
+12
+The sum of the even elements in the array is= 34
+The sum of the odd elements in the array is= 30
